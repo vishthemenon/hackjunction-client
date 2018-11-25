@@ -1,7 +1,7 @@
 extends ./layouts/master.pug
 
 block title
-  title My Page - Home
+  title RL Game Coach
 
 block manifestBrowserconfigFiles
   link(href='../manifest.json', rel='manifest')
@@ -10,9 +10,21 @@ block manifestBrowserconfigFiles
 block content
 
   //- Desktop page
-  section.page.home__page
-    h1.page__title # Index page
-    p Thank you for your supporting :)
-    p
-      a(href="https://www.buymeacoffee.com/edgardo" target="_blank")
-        img(src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;")
+  section.page
+    aside.model
+      h1 3D model maybe
+    .main-content
+      .head-content
+        .left
+          select.s(name='stat-select')
+            option(value='vel-attack') Movement under Attack
+            option(value='saab') Saab
+            option(value='fiat') Fiat
+            option(value='audi') Audi
+          select.s(name='order-select')
+            option(value='zero') Zero
+            option(value='one') One
+            option(value='two') Two
+
+        h1.page__title # Index page
+    

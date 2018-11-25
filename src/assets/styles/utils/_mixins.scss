@@ -14,3 +14,15 @@
   background-position: $position;
   background-size: $size;
 }
+
+@mixin bgPad {
+  padding: 20px;
+}
+
+@mixin smPad {
+  padding: 10px;
+}
+
+@mixin xmPad {
+  padding: 5px;
+}
