@@ -1,4 +1,11 @@
-.model {
+.model-cont {
   @include bgPad;
   flex: 1;
+}
+
+.model {
+  display: block;
+  &.hidden {
+    display: none;
+  }
 }

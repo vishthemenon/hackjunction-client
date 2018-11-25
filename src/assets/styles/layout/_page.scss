@@ -1,12 +1,19 @@
 /* src/assets/styles/layout/_page.scss  */
 
+body {
+  box-shadow:
+        inset 60px 0 120px #F3441E,  /* left magenta */
+        inset -60px 0 120px #0ff; /* right cyan */
+}
+
 .page {
   flex: 1;
   @include isFlex(center, center);
+  position: relative;
   width: 100vw;
   height: 100%;
   margin: 10px;
-  background: $lightseagreen;
+  background: $darkslategray;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 10px 10px 0 1px rgba(white, 0.25), 20px 20px 0 1px rgba(white, 0.15);
@@ -16,6 +23,13 @@
 }
 .page__title {
   margin: 0;
+}
+
+.logo {
+  width: 300px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /*

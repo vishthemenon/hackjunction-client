@@ -11,9 +11,23 @@ block content
 
   //- Desktop page
   section.page
-    aside.model
+    img.logo(src='assets/images/logo.png')
+    aside.model-cont
+      .head-content
+        .left
+          select.s(name='player-select')
+            option(value='begin') Beginner
+            option(value='intermediate') Intermediate
+            option(value='pro') Professional
       h1 3D model maybe
-    .main-content
+      a-scene
+        a-assets
+          a-asset-item.models#beg(src='/assets/images/shark.dae')
+          a-asset-item.models.hidden#int(src='/assets/images/shark.dae')
+        a-entity(collada-model='#beg')
+        a-entity(collada-model='#int')
+
+    .main-content 
       .head-content
         .left
           select.s(name='stat-select')
